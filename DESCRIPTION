@@ -1,0 +1,15 @@
+Package: hildenp
+Type: Package
+Title: Convenience Functions
+Version: 2.1
+Author: Patrick Hilden
+Maintainer: Patrick Hilden <philden@gmail.com>
+Description: convenience functions to make my life easier
+License: NA
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+Imports:
+    dplyr,
+    survival,
+    cmprsk

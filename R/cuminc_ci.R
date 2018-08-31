@@ -109,7 +109,7 @@ cuminc_ci<- function(ftime
 
   if(!missing(group)){
     fit$Tests<-cbind(dimnames(fit$Tests)[[1]],round(data.frame(fit$Tests),digits))
-    colnames(fit$Tests)<-c("event","statistic","p.value","df")
+    colnames(fit$Tests)<-c("event","statistic","p_value","df")
     results<-c(results,list(fit$Tests))
     names(results)[length(times)+1]<-"test"
   }

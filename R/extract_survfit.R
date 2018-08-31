@@ -84,5 +84,15 @@ extract_survfit <- function(survfit_obj){
     f.frame$strata<-NULL
 
   }
+
+  f.frame <-
+    dplyr::rename(
+      f.frame,
+      n_risk = n.risk,
+      n_event = n.event,
+      n_censor = n.censor,
+      prob = surv
+    )
+
   return(dplyr::as_data_frame(f.frame))
 }

@@ -34,7 +34,7 @@ extract_cuminc <- function(cuminc_obj){
     f.frame <- NULL
     for(i in 1:(length(names(cuminc_obj))-1)){
       f.frame.temp <- data.frame(time=cuminc_obj[[i]]$time
-                                 ,est=cuminc_obj[[i]]$est
+                                 ,prob=cuminc_obj[[i]]$est
                                  ,event=names(cuminc_obj)[i]
                                  ,stringsAsFactors=F)
       f.frame <- rbind(f.frame, f.frame.temp)
@@ -45,7 +45,7 @@ extract_cuminc <- function(cuminc_obj){
     f.frame<-NULL
     for(i in 1:length(objects(cuminc_obj))){
       f.frame.temp <- data.frame(time=cuminc_obj[[i]]$time
-                                 ,est=cuminc_obj[[i]]$est
+                                 ,prob=cuminc_obj[[i]]$est
                                  ,event = i)
       f.frame <- rbind(f.frame, f.frame.temp)
     }

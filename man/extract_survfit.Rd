@@ -18,10 +18,11 @@ object. This is mainly useful when plotting the survival function
 }
 \examples{
 
-df <- data.frame(
-  fail_time = 12 * rexp(100),
-  group = paste0('group_', sample(1:3, 100, replace = TRUE)),
-  fail_status = sample(0:1, 100, replace = TRUE)
+df <-
+  data.frame(
+    fail_time = 12 * rexp(100),
+    group = paste0('group_', sample(1:3, 100, replace = TRUE)),
+    fail_status = sample(0:1, 100, replace = TRUE)
 )
 
 extract_survfit(
